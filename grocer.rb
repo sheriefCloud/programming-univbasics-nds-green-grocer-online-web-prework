@@ -1,14 +1,12 @@
 def find_item_by_name_in_collection(name, collection)
-  value = {}
   cart_index = 0
   while cart_index < collection.size do
     c_item = collection[cart_index][:item]
     if c_item == name
-      value = collection[cart_index]
+      return collection[cart_index]
     end
     cart_index +=1
   end
-  value
 end
 
 def consolidate_cart(cart)
