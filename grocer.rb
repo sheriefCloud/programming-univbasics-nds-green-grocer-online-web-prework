@@ -3,7 +3,7 @@ def find_item_by_name_in_collection(name, collection)
   cart_index = 0
   while cart_index < collection.size do
     c_item = collection[cart_index][:item]
-    if c_item == name 
+    if c_item == name
       value = collection[cart_index]
     end
     cart_index +=1
